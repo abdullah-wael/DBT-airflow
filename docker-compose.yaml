@@ -38,8 +38,8 @@ x-airflow-common:
     - ${AIRFLOW_PROJ_DIR:-.}/config:/opt/airflow/config
     - ${AIRFLOW_PROJ_DIR:-.}/plugins:/opt/airflow/plugins
     - ${AIRFLOW_PROJ_DIR:-.}/dbt_project:/opt/airflow/dbt_project
-    - ${AIRFLOW_PROJ_DIR:-.}/dbt_project/dbt_potgres/.dbt:/root/.dbt
-    - ${AIRFLOW_PROJ_DIR:-.}/dbt_project/dbt_potgres/.dbt:/opt/airflow/.dbt
+    - ${AIRFLOW_PROJ_DIR:-.}/dbt_project/dbt_postgres/.dbt:/root/.dbt
+    - ${AIRFLOW_PROJ_DIR:-.}/dbt_project/dbt_postgres/.dbt:/opt/airflow/.dbt
 
   user: "${AIRFLOW_UID:-50000}:0"
   depends_on:
